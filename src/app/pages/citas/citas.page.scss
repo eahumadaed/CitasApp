@@ -1,0 +1,19 @@
+.cita-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+}
+
+.frase {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.autor {
+  font-size: 1.2em;
+  font-weight: bold;
+}

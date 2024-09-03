@@ -8,8 +8,20 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'citas',
     pathMatch: 'full'
+  },
+  {
+    path: 'citas',
+    loadChildren: () => import('./pages/citas/citas.module').then( m => m.CitasPageModule)
+  },
+  {
+    path: 'gestion',
+    loadChildren: () => import('./pages/gestion/gestion.module').then( m => m.GestionPageModule)
+  },
+  {
+    path: 'configuracion',
+    loadChildren: () => import('./pages/configuracion/configuracion.module').then( m => m.ConfiguracionPageModule)
   },
 ];
 

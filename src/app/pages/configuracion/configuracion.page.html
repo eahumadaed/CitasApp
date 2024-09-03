@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Configuraciones</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-item>
+    <ion-label>¿Desea poder borrar citas en el inicio (frase aleatoria)?</ion-label>
+    <ion-toggle [(ngModel)]="eliminarCitasInicio" (ionChange)="guardarConfiguracion()"></ion-toggle>
+  </ion-item>
+  
+  <ion-button expand="full" (click)="irAPaginaPrincipal()">
+    Ir a Página Principal
+  </ion-button>
+</ion-content>

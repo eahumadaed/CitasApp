@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Cita del Día</ion-title>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/configuracion">
+        <ion-icon slot="icon-only" name="settings-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div *ngIf="mostrarCita" class="cita-container">
+    <p class="frase">{{ citaAleatoria?.frase }}</p>
+    <p class="autor">- {{ citaAleatoria?.autor }}</p>
+  </div>
+</ion-content>
+
+<ion-fab vertical="bottom" horizontal="start" slot="fixed">
+  <ion-fab-button routerLink="/gestion" color="primary">
+    <ion-icon name="add"></ion-icon>
+  </ion-fab-button>
+</ion-fab>
